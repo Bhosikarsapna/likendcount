@@ -1,0 +1,14 @@
+<!-- 
+
+<i class="fa-solid fa-heart fa-2x mr-3 liked"
+[ngClass]="{
+    'liked' : getLikedState
+}"
+></i> -->
+
+<i class="fa-solid fa-heart fa-2x mr-3 liked"
+[class.liked] = "getLikedState"
+(click)="onLikeDisLike()"
+>
+
+</i>
